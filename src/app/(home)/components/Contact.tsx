@@ -27,7 +27,6 @@ export default function Example() {
                 type="text"
                 className="h-full px-2 w-full outline-none bg-transparent"
                 placeholder="Enter your full name"
-                required
               />
             </div>
           </div>
@@ -62,12 +61,9 @@ export default function Example() {
           {/* Submit */}
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white text-black hover:bg-black hover:border-2 hover:border-white hover:text-white transition font-semibold"
+            className="flex items-center justify-center w-full py-3 rounded-xl bg-white text-black hover:bg-black hover:border-2 hover:border-white hover:text-white transition font-semibold"
           >
             Submit Form
-            <svg className="mt-0.5" width="21" height="20" fill="none" viewBox="0 0 21 20">
-              <path d="m18.038 10.663-5.625 5.625a.94.94 0 0 1-1.328-1.328l4.024-4.023H3.625a.938.938 0 0 1 0-1.875h11.484l-4.022-4.025a.94.94 0 0 1 1.328-1.328l5.625 5.625a.935.935 0 0 1-.002 1.33" fill="#000" />
-            </svg>
           </button>
         </form>
       </div>
