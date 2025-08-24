@@ -2,7 +2,18 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 
-export const FloatingNav = ({ navItems, className }) => {
+type NavItem = {
+  name: string;
+  link: string;
+  icon: React.ReactNode;
+};
+
+type FloatingNavProps = {
+  navItems: NavItem[];
+  className?: string;
+};
+
+export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className }) => {
   return (
     <div
       className={cn(
